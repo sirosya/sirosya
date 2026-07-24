@@ -14,24 +14,15 @@
       <stop offset="0%" stop-color="#1FB6A8" stop-opacity="0.28"/>
       <stop offset="100%" stop-color="#1FB6A8" stop-opacity="0"/>
     </linearGradient>
-    <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#0d1420" stop-opacity="0"/>
-      <stop offset="15%" stop-color="#2fb3a0" stop-opacity="0.55"/>
-      <stop offset="50%" stop-color="#7CFFCB" stop-opacity="0.9"/>
-      <stop offset="85%" stop-color="#2fb3a0" stop-opacity="0.55"/>
-      <stop offset="100%" stop-color="#0d1420" stop-opacity="0"/>
-    </linearGradient>
     <linearGradient id="petalGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#ffffff"/>
       <stop offset="100%" stop-color="#fbe9ec"/>
     </linearGradient>
     <path id="petal2" d="M0,6.75 C-4.12,3.75 -4.12,-1.12 -3.15,-4.65 L0,-2.71 L3.15,-4.65 C4.12,-1.12 4.12,3.75 0,6.75 Z"/>
+    <filter id="glowText" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="0" stdDeviation="2.5" flood-color="#3fe3c4" flood-opacity="0.6"/>
+    </filter>
     <style>
-      .glint { animation: glint 3.4s ease-in-out infinite; transform-origin: 600px 35px; }
-      @keyframes glint {
-        0%, 100% { opacity: 0.5; r: 3; }
-        50% { opacity: 1; r: 5; }
-      }
       .edge-sway-a { animation: waveMove 10s ease-in-out infinite; }
       @keyframes waveMove {
         0%, 100% { transform: translateX(-10px); }
@@ -54,12 +45,12 @@
         85% { opacity: 0.8; }
         100% { transform: translateY(60px) rotate(220deg); opacity: 0; }
       }
+      .title { font-family: 'JetBrains Mono','Fira Code',Consolas,'Courier New',monospace; }
     </style>
   </defs>
 
   <rect width="1200" height="70" fill="url(#bgGrad)"/>
 
-  <!-- edge waves: same motif as header/footer, rescaled to the divider's height -->
   <g>
     <g class="edge-sway-a">
       <g transform="translate(147,0) rotate(90) scale(0.05833,1)">
@@ -88,7 +79,7 @@
     </g>
   </g>
 
-  <line x1="0" y1="35" x2="1200" y2="35" stroke="url(#lineGrad)" stroke-width="1.5"/>
+  <text x="40" y="35" dominant-baseline="central" text-anchor="start" class="title" font-size="30" font-weight="600" letter-spacing="1.2" fill="#f4fbf9" filter="url(#glowText)">About Me</text>
 
   <g fill="url(#petalGrad2)">
     <g transform="translate(300,10)">

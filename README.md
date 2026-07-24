@@ -12,7 +12,9 @@
 
 <h1 align="center">Hi, I'm sirosya!👋</h1>
 
-## About Me
+<div align="center">
+<img src="./assets/AboutMeTitle.svg" width="100%" alt="About Me" />
+</div>
 
 - Full-stack engineer based in Japan, focusing on infrastructure and web development.
 - I love coffee, silence, and unhurried time.
@@ -20,32 +22,28 @@
 - Thank you.
 
 <div align="center">
-<img src="./assets/divider.svg" width="100%" alt="" />
+<img src="./assets/SkillStackTitle.svg" width="100%" alt="Skill Stack" />
 </div>
-
-<h2 align="left">Skill Stack</h2>
 
 <div align="left">
 
-<p align="left"><strong>LANGUAGES</strong><br />
-<img src="https://skillicons.dev/icons?i=html" width="32" height="32" alt="HTML" /> <img src="https://skillicons.dev/icons?i=css" width="32" height="32" alt="CSS" /> <img src="https://skillicons.dev/icons?i=js" width="32" height="32" alt="JavaScript" /> <img src="https://skillicons.dev/icons?i=typescript" width="32" height="32" alt="TypeScript" /> <img src="https://skillicons.dev/icons?i=java" width="32" height="32" alt="Java" /></p>
+- **LANGUAGES**<br />
+  <img src="https://skillicons.dev/icons?i=html" width="32" height="32" alt="HTML" /> <img src="https://skillicons.dev/icons?i=css" width="32" height="32" alt="CSS" /> <img src="https://skillicons.dev/icons?i=js" width="32" height="32" alt="JavaScript" /> <img src="https://skillicons.dev/icons?i=typescript" width="32" height="32" alt="TypeScript" /> <img src="https://skillicons.dev/icons?i=java" width="32" height="32" alt="Java" />
 
-<p align="left"><strong>FRAMEWORKS</strong><br />
-<img src="https://skillicons.dev/icons?i=nodejs" width="32" height="32" alt="Node.js" /> <img src="https://skillicons.dev/icons?i=react" width="32" height="32" alt="React" /> <img src="https://skillicons.dev/icons?i=spring" width="32" height="32" alt="Spring" /></p>
+- **FRAMEWORKS**<br />
+  <img src="https://skillicons.dev/icons?i=nodejs" width="32" height="32" alt="Node.js" /> <img src="https://skillicons.dev/icons?i=react" width="32" height="32" alt="React" /> <img src="https://skillicons.dev/icons?i=spring" width="32" height="32" alt="Spring" />
 
-<p align="left"><strong>INFRA</strong><br />
-<img src="https://skillicons.dev/icons?i=aws" width="32" height="32" alt="AWS" /> <img src="https://skillicons.dev/icons?i=docker" width="32" height="32" alt="Docker" /> <img src="https://skillicons.dev/icons?i=mysql" width="32" height="32" alt="MySQL" /> <img src="https://skillicons.dev/icons?i=nginx" width="32" height="32" alt="Nginx" /> <img src="https://skillicons.dev/icons?i=windows" width="32" height="32" alt="Windows" /> <img src="https://skillicons.dev/icons?i=linux" width="32" height="32" alt="Linux" /> <img src="https://skillicons.dev/icons?i=ubuntu" width="32" height="32" alt="Ubuntu" /></p>
+- **INFRA**<br />
+  <img src="https://skillicons.dev/icons?i=aws" width="32" height="32" alt="AWS" /> <img src="https://skillicons.dev/icons?i=docker" width="32" height="32" alt="Docker" /> <img src="https://skillicons.dev/icons?i=mysql" width="32" height="32" alt="MySQL" /> <img src="https://skillicons.dev/icons?i=nginx" width="32" height="32" alt="Nginx" /> <img src="https://skillicons.dev/icons?i=windows" width="32" height="32" alt="Windows" /> <img src="https://skillicons.dev/icons?i=linux" width="32" height="32" alt="Linux" /> <img src="https://skillicons.dev/icons?i=ubuntu" width="32" height="32" alt="Ubuntu" />
 
-<p align="left"><strong>TOOLS</strong><br />
-<img src="https://skillicons.dev/icons?i=vscode" width="32" height="32" alt="VS Code" /> <img src="https://skillicons.dev/icons?i=git" width="32" height="32" alt="Git" /></p>
+- **TOOLS**<br />
+  <img src="https://skillicons.dev/icons?i=vscode" width="32" height="32" alt="VS Code" /> <img src="https://skillicons.dev/icons?i=git" width="32" height="32" alt="Git" />
 
 </div>
 
 <div align="center">
-<img src="./assets/divider.svg" width="100%" alt="" />
+<img src="./assets/CertificationsTitle.svg" width="100%" alt="Certifications" />
 </div>
-
-<h2 align="left">Certifications</h2>
 
 <div align="left">
 
@@ -57,10 +55,8 @@
 </div>
 
 <div align="center">
-<img src="./assets/divider.svg" width="100%" alt="" />
+<img src="./assets/LinksTitle.svg" width="100%" alt="Links" />
 </div>
-
-<h2 align="left">Links</h2>
 
 <div align="left">
 
