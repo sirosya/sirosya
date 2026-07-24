@@ -1,0 +1,223 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 280" width="1200" height="280">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#05070b"/>
+      <stop offset="55%" stop-color="#0b1018"/>
+      <stop offset="100%" stop-color="#0d1420"/>
+    </linearGradient>
+    <linearGradient id="waveGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1FB6A8" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#7CFFCB" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#1FB6A8" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="waveFillGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1FB6A8" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#1FB6A8" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="petalGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#fbe9ec"/>
+    </linearGradient>
+    <filter id="softBlur" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="4.5"/>
+    </filter>
+    <filter id="glowText" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="0" stdDeviation="6" flood-color="#3fe3c4" flood-opacity="0.65"/>
+    </filter>
+    <path id="petal" d="M0,9.45 C-5.78,5.25 -5.78,-1.58 -4.41,-6.51 L0,-3.8 L4.41,-6.51 C5.78,-1.58 5.78,5.25 0,9.45 Z"/>
+    <style>
+      .twinkle { animation: tw 3.2s ease-in-out infinite; }
+      @keyframes tw {
+        0%, 100% { opacity: 0.15; }
+        50% { opacity: 0.9; }
+      }
+      .edge-sway-a { animation: waveMove 10s ease-in-out infinite; }
+      @keyframes waveMove {
+        0%, 100% { transform: translateX(-10px); }
+        50% { transform: translateX(10px); }
+      }
+      .edge-ripple { animation: edgeRipple 3.6s ease-in-out infinite; }
+      @keyframes edgeRipple {
+        0%, 100% { transform: translateX(-3px); }
+        50% { transform: translateX(3px); }
+      }
+      .petal-fall {
+        animation-name: fall;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-fill-mode: backwards;
+      }
+      @keyframes fall {
+        0% { transform: translate(0, -30px) rotate(0deg); opacity: 0; }
+        8% { opacity: 0.95; }
+        92% { opacity: 0.9; }
+        100% { transform: translate(40px, 300px) rotate(300deg); opacity: 0; }
+      }
+      .sway {
+        animation-name: sway;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+      }
+      @keyframes sway {
+        0%, 100% { transform: translateX(-16px); }
+        50% { transform: translateX(16px); }
+      }
+      .brand { font-family: 'JetBrains Mono', 'Fira Code', Consolas, 'Courier New', monospace; }
+      .brand-jp { font-family: 'Noto Serif CJK JP', 'Hiragino Mincho ProN', 'Yu Mincho', serif; }
+    </style>
+    <clipPath id="clipEN">
+      <rect x="465.6" y="90" width="0" height="96">
+        <animate attributeName="width" begin="0.3s" dur="1.6s" calcMode="discrete"
+          keyTimes="0.0;0.1429;0.2857;0.4286;0.5714;0.7143;0.8571;1.0"
+          values="0.0;46.08;92.16;138.24;184.32;230.4;276.48;322.56" fill="freeze"/>
+      </rect>
+    </clipPath>
+  </defs>
+
+  <rect width="1200" height="280" fill="url(#bgGrad)"/>
+
+  <!-- stars -->
+  <g fill="#bfe9df">
+    <circle class="twinkle" cx="90" cy="40" r="1.6" style="animation-delay:0s"/>
+    <circle class="twinkle" cx="220" cy="90" r="1.2" style="animation-delay:0.6s"/>
+    <circle class="twinkle" cx="340" cy="35" r="1.4" style="animation-delay:1.2s"/>
+    <circle class="twinkle" cx="980" cy="55" r="1.6" style="animation-delay:0.3s"/>
+    <circle class="twinkle" cx="1080" cy="100" r="1.2" style="animation-delay:1.6s"/>
+    <circle class="twinkle" cx="1140" cy="45" r="1.4" style="animation-delay:0.9s"/>
+    <circle class="twinkle" cx="60" cy="150" r="1.2" style="animation-delay:2s"/>
+    <circle class="twinkle" cx="1150" cy="170" r="1.3" style="animation-delay:1.4s"/>
+  </g>
+
+  <!-- edge waves: the footer wave, verbatim, rotated 90deg to run along each side.
+       sway is applied on an outer wrapper (screen space) so it stays horizontal
+       and full-amplitude after the rotation. -->
+  <g>
+    <g class="edge-sway-a">
+      <g transform="translate(127,0) rotate(90) scale(0.2333,0.79)">
+        <path d="M0,132 C150,122 300,142 450,132 C600,122 750,142 900,132 C1050,122 1150,132 1200,128 L1200,160 L0,160 Z" fill="url(#waveFillGrad)"/>
+        <path d="M0,132 C150,122 300,142 450,132 C600,122 750,142 900,132 C1050,122 1150,132 1200,128" fill="none" stroke="url(#waveGrad)" stroke-width="1.5"/>
+      </g>
+      <g class="edge-ripple">
+        <g transform="translate(127,0) rotate(90) scale(0.2333,0.79)">
+          <path d="M0,138 C150,148 300,128 450,138 C600,148 750,128 900,138 C1050,148 1150,138 1200,142" fill="none" stroke="url(#waveGrad)" stroke-width="1" opacity="0.6"/>
+        </g>
+      </g>
+    </g>
+
+    <g transform="translate(1200,0) scale(-1,1)">
+      <g class="edge-sway-a">
+        <g transform="translate(127,0) rotate(90) scale(0.2333,0.79)">
+          <path d="M0,132 C150,122 300,142 450,132 C600,122 750,142 900,132 C1050,122 1150,132 1200,128 L1200,160 L0,160 Z" fill="url(#waveFillGrad)"/>
+          <path d="M0,132 C150,122 300,142 450,132 C600,122 750,142 900,132 C1050,122 1150,132 1200,128" fill="none" stroke="url(#waveGrad)" stroke-width="1.5"/>
+        </g>
+        <g class="edge-ripple">
+          <g transform="translate(127,0) rotate(90) scale(0.2333,0.79)">
+            <path d="M0,138 C150,148 300,128 450,138 C600,148 750,128 900,138 C1050,148 1150,138 1200,142" fill="none" stroke="url(#waveGrad)" stroke-width="1" opacity="0.6"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <!-- falling sakura petals -->
+  <g>
+    <g class="sway" style="animation-duration:4.5s">
+      <g transform="translate(120,0) scale(1.1)">
+        <use href="#petal" fill="url(#petalGrad)" opacity="0.9" class="petal-fall" style="animation-duration:9s; animation-delay:0s"/>
+      </g>
+    </g>
+    <g class="sway" style="animation-duration:5.2s">
+      <g transform="translate(260,0) scale(0.8)">
+        <use href="#petal" fill="url(#petalGrad)" opacity="0.85" class="petal-fall" style="animation-duration:11s; animation-delay:2s"/>
+      </g>
+    </g>
+    <g class="sway" style="animation-duration:3.8s">
+      <g transform="translate(420,0) scale(1.0)">
+        <use href="#petal" fill="url(#petalGrad)" opacity="0.8" class="petal-fall" style="animation-duration:8s; animation-delay:4s"/>
+      </g>
+    </g>
+    <g class="sway" style="animation-duration:6s">
+      <g transform="translate(760,0) scale(0.9)">
+        <use href="#petal" fill="url(#petalGrad)" opacity="0.9" class="petal-fall" style="animation-duration:10s; animation-delay:1s"/>
+      </g>
+    </g>
+    <g class="sway" style="animation-duration:4.8s">
+      <g transform="translate(900,0) scale(1.15)">
+        <use href="#petal" fill="url(#petalGrad)" opacity="0.85" class="petal-fall" style="animation-duration:12s; animation-delay:3.5s"/>
+      </g>
+    </g>
+    <g class="sway" style="animation-duration:5.6s">
+      <g transform="translate(1040,0) scale(0.85)">
+        <use href="#petal" fill="url(#petalGrad)" opacity="0.8" class="petal-fall" style="animation-duration:9.5s; animation-delay:5s"/>
+      </g>
+    </g>
+    <g class="sway" style="animation-duration:4.2s">
+      <g transform="translate(600,0) scale(0.95)">
+        <use href="#petal" fill="url(#petalGrad)" opacity="0.75" class="petal-fall" style="animation-duration:10.5s; animation-delay:6.5s"/>
+      </g>
+    </g>
+    <g class="sway" style="animation-duration:5.0s">
+      <g transform="translate(40,0) scale(0.95)">
+        <use href="#petal" fill="url(#petalGrad)" opacity="0.8" class="petal-fall" style="animation-duration:10.5s; animation-delay:2.5s"/>
+      </g>
+    </g>
+    <g class="sway" style="animation-duration:4.4s">
+      <g transform="translate(190,0) scale(1.05)">
+        <use href="#petal" fill="url(#petalGrad)" opacity="0.85" class="petal-fall" style="animation-duration:9.2s; animation-delay:5.5s"/>
+      </g>
+    </g>
+    <g class="sway" style="animation-duration:6.2s">
+      <g transform="translate(340,0) scale(0.78)">
+        <use href="#petal" fill="url(#petalGrad)" opacity="0.75" class="petal-fall" style="animation-duration:11.5s; animation-delay:0.8s"/>
+      </g>
+    </g>
+    <g class="sway" style="animation-duration:3.9s">
+      <g transform="translate(540,0) scale(1.2)">
+        <use href="#petal" fill="url(#petalGrad)" opacity="0.9" class="petal-fall" style="animation-duration:8.6s; animation-delay:3s"/>
+      </g>
+    </g>
+    <g class="sway" style="animation-duration:5.4s">
+      <g transform="translate(830,0) scale(0.88)">
+        <use href="#petal" fill="url(#petalGrad)" opacity="0.8" class="petal-fall" style="animation-duration:10s; animation-delay:6s"/>
+      </g>
+    </g>
+    <g class="sway" style="animation-duration:4.7s">
+      <g transform="translate(970,0) scale(1.0)">
+        <use href="#petal" fill="url(#petalGrad)" opacity="0.85" class="petal-fall" style="animation-duration:9.8s; animation-delay:1.5s"/>
+      </g>
+    </g>
+    <g class="sway" style="animation-duration:5.8s">
+      <g transform="translate(1120,0) scale(0.82)">
+        <use href="#petal" fill="url(#petalGrad)" opacity="0.78" class="petal-fall" style="animation-duration:11s; animation-delay:4.2s"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- wordmark (typewriter reveal) -->
+  <text x="465.6" y="140" text-anchor="start" class="brand" font-size="64.8" letter-spacing="7.2" fill="#f4fbf9" filter="url(#glowText)" clip-path="url(#clipEN)">sirosya</text>
+  <!-- IME conversion: romaji -> hiragana -> kanji -->
+  <text x="562.0" y="200" text-anchor="start" class="brand-jp" font-size="39.6" letter-spacing="7.2" fill="#8fd9c9" opacity="0">s
+      <set attributeName="opacity" to="1" begin="2.2s" dur="0.15s" fill="remove"/>
+  </text>
+  <text x="562.0" y="200" text-anchor="start" class="brand-jp" font-size="39.6" letter-spacing="7.2" fill="#8fd9c9" opacity="0">し
+      <set attributeName="opacity" to="1" begin="2.35s" dur="0.15s" fill="remove"/>
+  </text>
+  <text x="562.0" y="200" text-anchor="start" class="brand-jp" font-size="39.6" letter-spacing="7.2" fill="#8fd9c9" opacity="0">しr
+      <set attributeName="opacity" to="1" begin="2.5s" dur="0.15s" fill="remove"/>
+  </text>
+  <text x="562.0" y="200" text-anchor="start" class="brand-jp" font-size="39.6" letter-spacing="7.2" fill="#8fd9c9" opacity="0">しろ
+      <set attributeName="opacity" to="1" begin="2.65s" dur="0.45s" fill="remove"/>
+  </text>
+  <text x="562.0" y="200" text-anchor="start" class="brand-jp" font-size="39.6" letter-spacing="7.2" fill="#8fd9c9" opacity="0">白
+      <set attributeName="opacity" to="1" begin="3.1s" dur="0.45s" fill="remove"/>
+  </text>
+  <text x="562.0" y="200" text-anchor="start" class="brand-jp" font-size="39.6" letter-spacing="7.2" fill="#8fd9c9" opacity="0">白sya
+      <set attributeName="opacity" to="1" begin="3.55s" dur="0.25s" fill="remove"/>
+  </text>
+  <text x="562.0" y="200" text-anchor="start" class="brand-jp" font-size="39.6" letter-spacing="7.2" fill="#8fd9c9" opacity="0">白しゃ
+      <set attributeName="opacity" to="1" begin="3.8s" dur="0.45s" fill="remove"/>
+  </text>
+  <text x="562.0" y="200" text-anchor="start" class="brand-jp" font-size="39.6" letter-spacing="7.2" fill="#8fd9c9" opacity="0">白紗
+      <set attributeName="opacity" to="1" begin="4.25s" fill="freeze"/>
+  </text>
+</svg>

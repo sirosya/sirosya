@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 160" width="1200" height="160">
+  <defs>
+    <linearGradient id="fBgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0d1420"/>
+      <stop offset="60%" stop-color="#0b1018"/>
+      <stop offset="100%" stop-color="#05070b"/>
+    </linearGradient>
+    <linearGradient id="waveGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1FB6A8" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#7CFFCB" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#1FB6A8" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="fillGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1FB6A8" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#1FB6A8" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="petalGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#fbe9ec"/>
+    </linearGradient>
+    <path id="petal3" d="M0,8.1 C-4.95,4.5 -4.95,-1.35 -3.78,-5.58 L0,-3.26 L3.78,-5.58 C4.95,-1.35 4.95,4.5 0,8.1 Z"/>
+    <style>
+      .wave-a { animation: waveMove 10s ease-in-out infinite; }
+      @keyframes waveMove {
+        0%, 100% { transform: translateY(-8px); }
+        50% { transform: translateY(8px); }
+      }
+      .wave-ripple { animation: waveRipple 3.6s ease-in-out infinite; }
+      @keyframes waveRipple {
+        0%, 100% { transform: translateY(-3px); }
+        50% { transform: translateY(3px); }
+      }
+      .p3-fall {
+        animation-name: p3fall;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-fill-mode: backwards;
+      }
+      @keyframes p3fall {
+        0% { transform: translate(0,-16px) rotate(0deg); opacity: 0; }
+        10% { opacity: 0.9; }
+        90% { opacity: 0.8; }
+        100% { transform: translate(30px,150px) rotate(260deg); opacity: 0; }
+      }
+    </style>
+  </defs>
+  <rect width="1200" height="160" fill="url(#fBgGrad)"/>
+
+  <g fill="url(#petalGrad3)">
+    <g transform="translate(180,0)">
+      <use href="#petal3" class="p3-fall" opacity="0.85" style="animation-duration:7s; animation-delay:0s"/>
+    </g>
+    <g transform="translate(430,0) scale(0.85)">
+      <use href="#petal3" class="p3-fall" opacity="0.8" style="animation-duration:8.4s; animation-delay:2s"/>
+    </g>
+    <g transform="translate(700,0) scale(1.05)">
+      <use href="#petal3" class="p3-fall" opacity="0.85" style="animation-duration:6.6s; animation-delay:4s"/>
+    </g>
+    <g transform="translate(980,0) scale(0.9)">
+      <use href="#petal3" class="p3-fall" opacity="0.8" style="animation-duration:9s; animation-delay:1s"/>
+    </g>
+    <g transform="translate(60,0) scale(0.95)">
+      <use href="#petal3" class="p3-fall" opacity="0.8" style="animation-duration:7.6s; animation-delay:3s"/>
+    </g>
+    <g transform="translate(320,0) scale(1.1)">
+      <use href="#petal3" class="p3-fall" opacity="0.85" style="animation-duration:8.8s; animation-delay:0.6s"/>
+    </g>
+    <g transform="translate(850,0) scale(0.8)">
+      <use href="#petal3" class="p3-fall" opacity="0.75" style="animation-duration:6.2s; animation-delay:2.4s"/>
+    </g>
+    <g transform="translate(1100,0) scale(1.0)">
+      <use href="#petal3" class="p3-fall" opacity="0.85" style="animation-duration:9.6s; animation-delay:4.5s"/>
+    </g>
+  </g>
+
+  <g class="wave-a">
+    <path d="M0,132 C150,122 300,142 450,132 C600,122 750,142 900,132 C1050,122 1150,132 1200,128 L1200,160 L0,160 Z" fill="url(#fillGrad)"/>
+    <path d="M0,132 C150,122 300,142 450,132 C600,122 750,142 900,132 C1050,122 1150,132 1200,128" fill="none" stroke="url(#waveGrad)" stroke-width="1.5"/>
+    <g class="wave-ripple">
+      <path d="M0,138 C150,148 300,128 450,138 C600,148 750,128 900,138 C1050,148 1150,138 1200,142" fill="none" stroke="url(#waveGrad)" stroke-width="1" opacity="0.6"/>
+    </g>
+  </g>
+</svg>
