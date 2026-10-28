@@ -17,7 +17,7 @@
 </div>
 
 - Full-stack engineer based in Japan, focusing on infrastructure and web development.
-- I love coffee, silence, and unhurried time.
+- I love coffee (in moderation), silence, and unhurried time.
 - I value my own pace, yet I enjoy connecting with others.
 - Thank you.
 
@@ -27,17 +27,17 @@
 
 <div align="left">
 
-- **LANGUAGES**<br />
-  <img src="https://skillicons.dev/icons?i=html" width="32" height="32" alt="HTML" /> <img src="https://skillicons.dev/icons?i=css" width="32" height="32" alt="CSS" /> <img src="https://skillicons.dev/icons?i=js" width="32" height="32" alt="JavaScript" /> <img src="https://skillicons.dev/icons?i=typescript" width="32" height="32" alt="TypeScript" /> <img src="https://skillicons.dev/icons?i=java" width="32" height="32" alt="Java" />
+- **LANGUAGES & MARKUP**<br />
+  <img src="https://skillicons.dev/icons?i=html" width="32" height="32" alt="HTML" /> <img src="https://skillicons.dev/icons?i=css" width="32" height="32" alt="CSS" /> <img src="https://skillicons.dev/icons?i=js" width="32" height="32" alt="JavaScript" /> <img src="https://skillicons.dev/icons?i=typescript" width="32" height="32" alt="TypeScript" /> <img src="https://skillicons.dev/icons?i=java" width="32" height="32" alt="Java" /> <img src="https://skillicons.dev/icons?i=py" width="32" height="32" alt="Python" /> <img src="https://skillicons.dev/icons?i=svg" width="32" height="32" alt="SVG" />
 
 - **FRAMEWORKS**<br />
-  <img src="https://skillicons.dev/icons?i=nodejs" width="32" height="32" alt="Node.js" /> <img src="https://skillicons.dev/icons?i=react" width="32" height="32" alt="React" /> <img src="https://skillicons.dev/icons?i=spring" width="32" height="32" alt="Spring" />
+  <img src="https://skillicons.dev/icons?i=nodejs" width="32" height="32" alt="Node.js" /> <img src="https://skillicons.dev/icons?i=react" width="32" height="32" alt="React" /> <img src="https://skillicons.dev/icons?i=spring" width="32" height="32" alt="Spring" /> <img src="https://skillicons.dev/icons?i=gradle" width="32" height="32" alt="Gradle" />
 
 - **INFRA**<br />
-  <img src="https://skillicons.dev/icons?i=aws" width="32" height="32" alt="AWS" /> <img src="https://skillicons.dev/icons?i=docker" width="32" height="32" alt="Docker" /> <img src="https://skillicons.dev/icons?i=mysql" width="32" height="32" alt="MySQL" /> <img src="https://skillicons.dev/icons?i=nginx" width="32" height="32" alt="Nginx" /> <img src="https://skillicons.dev/icons?i=windows" width="32" height="32" alt="Windows" /> <img src="https://skillicons.dev/icons?i=linux" width="32" height="32" alt="Linux" /> <img src="https://skillicons.dev/icons?i=ubuntu" width="32" height="32" alt="Ubuntu" />
+  <img src="https://skillicons.dev/icons?i=aws" width="32" height="32" alt="AWS" /> <img src="https://skillicons.dev/icons?i=docker" width="32" height="32" alt="Docker" /> <img src="https://skillicons.dev/icons?i=mysql" width="32" height="32" alt="MySQL" /> <img src="https://skillicons.dev/icons?i=nginx" width="32" height="32" alt="Nginx" /> <img src="https://skillicons.dev/icons?i=windows" width="32" height="32" alt="Windows" /> <img src="https://skillicons.dev/icons?i=linux" width="32" height="32" alt="Linux" /> <img src="https://skillicons.dev/icons?i=ubuntu" width="32" height="32" alt="Ubuntu" /> <img src="https://skillicons.dev/icons?i=cloudflare" width="32" height="32" alt="Cloudflare" />
 
 - **TOOLS**<br />
-  <img src="https://skillicons.dev/icons?i=vscode" width="32" height="32" alt="VS Code" /> <img src="https://skillicons.dev/icons?i=git" width="32" height="32" alt="Git" />
+  <img src="https://skillicons.dev/icons?i=vscode" width="32" height="32" alt="VS Code" /> <img src="https://skillicons.dev/icons?i=git" width="32" height="32" alt="Git" /> <img src="https://skillicons.dev/icons?i=discord" width="32" height="32" alt="Discord" /> <img src="https://skillicons.dev/icons?i=obsidian" width="32" height="32" alt="Obsidian" /> <img src="https://skillicons.dev/icons?i=figma" width="32" height="32" alt="Figma" />
 
 </div>
 
